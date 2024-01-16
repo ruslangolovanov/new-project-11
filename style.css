@@ -145,6 +145,11 @@ p {
 .header2 {
   background-color: #584573;
 }
+
+.btn-secondary:hover {
+  border-color: #4d2c6d;
+}
+
 @media screen and (min-width: 1200px) {
   nav {
     position: absolute;

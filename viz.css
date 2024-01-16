@@ -330,7 +330,8 @@ body {
   }
   .code,
   .decode {
-    font-size: 14px;
+    width: 100px;
+    font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,7 +387,7 @@ body {
 
   .dropdown {
     position: absolute;
-    left: 40px;
+    left: 20px;
   }
 
   .try {
