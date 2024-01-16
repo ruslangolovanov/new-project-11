@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="methods">
+      <div class="header">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton2"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Меню
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-dark"
+            aria-labelledby="dropdownMenuButton2"
+          >
+            <li>
+              <a class="dropdown-item active" href="/main/index.html"
+                >Главная</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/cesar/cesar.html">Шифр Цезаря</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/vizhener/viz.html"
+                >Шифр Виженера</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="/vernam/ver.html">Шифр Вернама</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+          </ul>
+        </div>
+
+        <h1 id="headerMet">Шифрование</h1>
+      </div>
+
+      <div id="backgrnd_for_pctr">
+        <img
+          src="12704347_5050677.svg"
+          alt="man with key and folders"
+          id="man_key"
+        />
+      </div>
+
+      <div class="main">
+        <div class="information">
+          <p>
+            &#149; Что такое шифрование? Шифрование — это процесс кодирования
+            информации с целью предотвращения несанкционированного доступа. В
+            случае кражи или утечки зашифрованные данные будут недоступны для
+            прочтения без соответствующего ключа.
+          </p>
+          <p>
+            &#149; Шифрование началось с простых техник замены символов и
+            транспозиции в древние времена, затем развивалось к сложным методам,
+            таким как шифр Цезаря, и перешло к более продвинутым математическим
+            алгоритмам, таким как RSA, AES, и SHA-3. В наши дни разработки в
+            области квантовых технологий предлагают возможности для создания
+            квантовых методов шифрования, перенося безопасность данных на новый
+            уровень в цифровую эпоху, где конфиденциальность и целостность
+            данных играют ключевую роль.
+          </p>
+          <!-- <p>
+            &#149; На сайте представлены некоторые простейшие методы шифро
+          </p> -->
+        </div>
+        <div class="header2">Методы шифрования</div>
+        <!-- <div class="information2">
+          <p>
+            на сайте представлены некоторые просте
+          </p>
+        </div> -->
+      </div>
+
+      <div id="backgrnd_for_met">
+        <div id="met_1">
+          <p id="name_met">Шифр Цезаря</p>
+          <button
+            onclick="document.location = '\\cesar\\cesar.html'"
+            id="try_met"
+          >
+            Подробнее
+          </button>
+        </div>
+        <div id="met_2">
+          <p id="name_met">Шифр Виженера</p>
+          <button
+            onclick="document.location = '\\vizhener\\viz.html'"
+            id="try_met"
+          >
+            Подробнее
+          </button>
+        </div>
+        <div id="met_3">
+          <p id="name_met">Шифр Вернама</p>
+          <button
+            onclick="document.location = '\\vernam\\ver.html'"
+            id="try_met"
+          >
+            Подробнее
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

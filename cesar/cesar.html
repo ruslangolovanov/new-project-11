@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="cesar.css" />
+  </head>
+  <body>
+    <!-- <input type="text" class="in" />
+    <input type="number" class="num" />
+    <button class="pos">Шифровка</button>
+    <button class="neg">Дешифровка</button>
+    <div class="out"></div> -->
+
+    <div class="header">
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton2"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Меню
+        </button>
+        <ul
+          class="dropdown-menu dropdown-menu-dark"
+          aria-labelledby="dropdownMenuButton2"
+        >
+          <li>
+            <a class="dropdown-item" href="/main/index.html">Главная</a>
+          </li>
+          <li>
+            <a class="dropdown-item active" href="/cesar/cesar.html"
+              >Шифр Цезаря</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="/vizhener/viz.html">Шифр Виженера</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="/vernam/ver.html">Шифр Вернама</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+        </ul>
+      </div>
+      <h1>Шифр Цезаря</h1>
+    </div>
+
+    <div class="main">
+      <div class="information">
+        <p>
+          &#149; Шифр Цезаря, также известный как шифр сдвига, является одним из
+          наиболее простых и широко известных методов шифрования. Его название
+          происходит от имени римского императора Цезаря, который, согласно
+          легенде, использовал этот метод для обезопасивания своих секретных
+          сообщений.
+        </p>
+        <p>
+          &#149; Идея шифра Цезаря заключается в замене каждой буквы в сообщении
+          на букву, находящуюся на несколько позиций (сдвиге) вперед или назад в
+          алфавите. Например, сдвигая каждую букву на одну позицию вперед, буква
+          «А» станет «Б», «Б» станет «В» и так далее.
+        </p>
+        <p>
+          &#149; В исходном методе Цезарь использовал сдвиг величиной 3, поэтому
+          шифр получил название «шифр Цезаря со сдвигом 3». Таким образом, «А»
+          заменяется на «Г», «Б» на «Д» и так далее.
+        </p>
+        <p>
+          &#149; Дешифрование сообщений, зашифрованных шифром Цезаря,
+          заключается в простой обратной операции, сдвиге каждой буквы на
+          несколько позиций назад в алфавите. Так, для дешифровки сообщения,
+          зашифрованного со сдвигом 3, необходимо сдвинуть каждую букву на 3
+          позиции назад.
+        </p>
+      </div>
+      <div class="try">
+        <!-- <img src="pngwing.com.png" alt="cesar helmet" /> -->
+        <div class="form">
+          <p class="form_text">
+            Введите сообщение и число символов на которое сдвинется каждая буква
+          </p>
+          <div class="input">
+            <input
+              type="text"
+              name="text"
+              class="in"
+              placeholder="Сообщение..."
+            />
+            <input type="number" name="text" class="num" placeholder="0" />
+          </div>
+          <p class="form_text">Зашифрованный текст:</p>
+          <textarea class="output" placeholder="Результат"></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="cesar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.in,
+.num,
+.output {
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 15px #c5c5c5, -5px -5px 15px #5660b1;
+  transition: 0.3s;
+  margin: 20px;
+  font-size: 24px;
+  color: #5660b1;
+}
+.try {
+  display: flex;
+  align-items: center;
+}
+.in:focus,
+.num:focus {
+  outline-color: #5660b1;
+  background: #e8e8e8;
+  box-shadow: inset 5px 5px 15px #c5c5c5, inset -5px -5px 15px #5660b1;
+  transition: 0.3s;
+}
+::placeholder {
+  color: #5660b1;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  background-color: #8388b0;
+  margin: 0;
+}
+h1 {
+  color: #000;
+
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+body {
+  background-color: rgba(161, 139, 191, 0.77);
+}
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 0;
+  border-radius: 69px;
+  background: #d9d9d9;
+
+  width: 100%;
+}
+.form_text {
+  color: #000;
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.output {
+  overflow: auto;
+  resize: none;
+  outline-color: #5660b1;
+}
+
+@media screen and (min-width: 1000px) {
+  .in,
+  .num,
+  .output {
+    margin: 20px;
+    font-size: 24px;
+  }
+
+  .header {
+    height: 150px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  .main {
+    margin-top: 60px;
+  }
+
+  .form {
+    margin: 50px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form_text {
+    font-size: 25px;
+
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .output {
+    /* width: 400px; */
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  .num {
+    width: 70px;
+  }
+  img {
+    padding-bottom: 30px;
+    width: 350px;
+    height: 350px;
+  }
+  .dropdown {
+    position: absolute;
+    left: 40px;
+  }
+
+  .btn::after {
+    background-color: #6c757d;
+  }
+
+  .try {
+    margin-top: 50px;
+  }
+  .information {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .in,
+  .num,
+  .output {
+    margin: 5px;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .header {
+    width: 100%;
+    height: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  .main {
+    margin-top: 40px;
+  }
+
+  .form {
+    margin: 30px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form_text {
+    font-size: 20px;
+
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .output {
+    /* width: 300px; */
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  .num {
+    width: 70px;
+  }
+  img {
+    margin-left: 70px;
+    padding-bottom: 30px;
+    width: 200px;
+    height: 200px;
+  }
+  .dropdown {
+    position: absolute;
+    left: 40px;
+  }
+
+  .btn::after {
+    background-color: #6c757d;
+  }
+
+  .try {
+    margin-top: 30px;
+  }
+  .information {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .in,
+  .num,
+  .output {
+    margin: 5px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 1rem;
+  }
+
+  .header {
+    width: 100%;
+    height: 70px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+
+  .main {
+    margin-top: 20px;
+  }
+
+  .form {
+    margin: 10px;
+    border-radius: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .form_text {
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .output {
+    /* width: 150px; */
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .num {
+    width: 30px;
+  }
+  img {
+    margin-left: 70px;
+    padding-bottom: 30px;
+    width: 100px;
+    height: 100px;
+  }
+  .dropdown {
+    position: absolute;
+    left: 40px;
+  }
+
+  .btn::after {
+    background-color: #6c757d;
+  }
+
+  .try {
+    margin-top: 30px;
+  }
+  .information {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+  #dropdownMenuButton2 {
+    font-size: 10px;
+    padding: 0 0 0 5px;
+  }
+  button {
+    width: 45px;
+    height: 30px;
+    font-size: 5px;
+    margin-right: 10px;
+  }
+}
