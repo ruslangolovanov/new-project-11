@@ -199,9 +199,9 @@ p {
   #met_3 {
     padding-top: 50px;
 
-    height: 250px;
-    width: 250px;
-    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
   }
   #name_met {
     font-size: 30px;
@@ -322,7 +322,7 @@ p {
     margin-bottom: 20px;
     height: 200px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 30px;
   }
   #name_met {
     font-size: 25px;
@@ -429,7 +429,7 @@ p {
     margin: 10px;
     height: 180px;
     width: 180px;
-    border-radius: 10px;
+    border-radius: 30px;
   }
   #name_met {
     font-size: 20px;

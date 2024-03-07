@@ -88,13 +88,23 @@
             Введите сообщение и число символов на которое сдвинется каждая буква
           </p>
           <div class="input">
-            <input type="number" name="text" class="num" placeholder="0" />
+            <input
+              type="number"
+              name="text"
+              class="num"
+              placeholder="3"
+              value="3"
+            />
             <input
               type="text"
               name="text"
               class="in"
               placeholder="Сообщение..."
             />
+            <div class="buts">
+              <button class="code">Кодировать</button>
+              <button class="decode">Декодировать</button>
+            </div>
           </div>
           <p class="form_text">Зашифрованный текст:</p>
           <textarea class="output" placeholder="Результат"></textarea>

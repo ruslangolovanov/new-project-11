@@ -2,6 +2,54 @@
   margin: 0;
   padding: 0;
 }
+.code,
+.decode {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #5660b1;
+  background-color: white;
+}
+
+.code:hover,
+.decode:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px #5660b1;
+}
+
+.code:active,
+.decode:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px #5660b1;
+}
+
+.code::after,
+.decode::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.code::after,
+.decode::after {
+  background-color: #fff;
+}
+
 .in,
 .num,
 .output {

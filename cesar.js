@@ -1,4 +1,5 @@
-document.querySelector(".in").oninput = Cesar;
+document.querySelector(".code").onclick = Cesar;
+document.querySelector(".decode").onclick = deCesar;
 
 function Cesar() {
   let out = "";
@@ -7,6 +8,21 @@ function Cesar() {
   for (let i = 0; i < str.length; i++) {
     let code = str.charCodeAt(i);
     code = code + Num;
+    out += String.fromCharCode(code);
+    console.log(out);
+    console.log(code);
+  }
+
+  document.querySelector(".output").innerHTML = out;
+}
+
+function deCesar() {
+  let out = "";
+  let str = document.querySelector(".in").value;
+  let Num = Number(document.querySelector(".num").value);
+  for (let i = 0; i < str.length; i++) {
+    let code = str.charCodeAt(i);
+    code = code - Num;
     out += String.fromCharCode(code);
     console.log(out);
     console.log(code);
